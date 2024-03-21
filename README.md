@@ -104,6 +104,22 @@ _class:
 
 - Example が豊富．
 
+## 作り方
+
+```bash
+# インストール
+cargo install cargo-shuttle
+
+# プロジェクトの作成
+cargo shuttle init
+
+# ローカルで動作
+cargo shuttle run
+
+# デプロイ
+cargo shuttle deploy
+```
+
 ## API 動作例（Axum フレームワーク）
 
 ```rust
@@ -145,6 +161,9 @@ _class:
 
     - プロジェクトのバージョンを修正すれば OK．
 
+- プロジェクトが 30 分で寝る
+
+    - `cargo shuttle project start --idle-minutes 0` の設定が必要．
 
 ## まとめ
 
